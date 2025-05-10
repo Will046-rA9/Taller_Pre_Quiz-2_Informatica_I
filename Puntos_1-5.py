@@ -18,3 +18,7 @@ print(f"La forma resultante es: {m2.shape}")
 print("\n\nPUNTO 4 Modificar su forma y pasarla a 2D")
 m4 = m2.copy().reshape([12, 1000])
 print(m4)
+
+print("\n\nPUNTO 5 pasar al matriz 4 a un Dataframe en pandas...")
+df5 = pd.DataFrame(m4, index = [f"Fila_{i+1}" for i in range(m4.shape[0])])
+print(df5)
